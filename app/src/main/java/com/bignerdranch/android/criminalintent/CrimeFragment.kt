@@ -110,6 +110,7 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
     }
     private fun updateUI (){
         titleField.setText(crime.title)
+        //extra credit goes here:
         dateButton.text = crime.date.toString()
         solvedCheckBox.apply {
             isChecked = crime.isSolved
